@@ -23,7 +23,7 @@
     <div class="containte-fluid row">
 
         <!-- Formulario -->
-        <form class="col-4 p-3 m-2" method="POST" style="border: thin solid black">
+        <form class="col-4 p-3 m-4" method="POST" style="border: thin solid black">
             <h3 class="text-center text-secondary">Registro de Personas</h3>
             <?php 
             include "modelo/conexion.php";
