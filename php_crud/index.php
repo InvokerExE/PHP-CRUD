@@ -16,14 +16,14 @@
         }
     </script>
 
-    <h1 class="text-center p-3">PHP CRUD</h1>
+    <h1 class="text-center p-3 bg-info" style="color:white">PHP CRUD</h1>
     <?php
         include "controlador/eliminar_personas.php";
     ?>
     <div class="containte-fluid row">
 
         <!-- Formulario -->
-        <form class="col-4 p-3" method="POST">
+        <form class="col-4 p-3 m-2" method="POST" style="border: thin solid black">
             <h3 class="text-center text-secondary">Registro de Personas</h3>
             <?php 
             include "modelo/conexion.php";
@@ -34,7 +34,7 @@
                 <input type="text" class="form-control" name="Nombre">
             </div>
             <div class="mb-3">
-                <label for="InputText" class="form-label">Apellido(s)</label>
+                <label for="InputText" class="form-label">Apellido</label>
                 <input type="text" class="form-control" name="Apellidos">
             </div>
             <div class="mb-3">
@@ -43,16 +43,16 @@
             </div>
             <button type="submit" class="btn btn-primary" name="btnregistrar" value="ok">Registrar</button>
         </form>
-
+       
         <!-- Tabla de Registros -->
-        <div class="col-8 p-4">
+        <div class="col-7 p-4 m-2" style="border: thin solid black">
             <table class="table caption-top">
                 <thead class="bg-info">
                 <!--Encabezado de la tabla-->
                     <tr>
                     <th scope="col">ID</th>
                     <th scope="col">Nombre</th>
-                    <th scope="col">Apellido(s)</th>
+                    <th scope="col">Apellido</th>
                     <th scope="col">Telefono</th>
                     <th scope="col"></th>
                     </tr>
